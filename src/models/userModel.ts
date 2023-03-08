@@ -18,4 +18,6 @@ const userSchema = new mongoose.Schema({
     timestamps: true
 });
 
+// A new collection will be added to database with name goalusers(lowercase plural) as soon as we perform some queries on the model like
+// userModel.find() etc
 export const userModel = mongoose.model('GoalUser', userSchema);
